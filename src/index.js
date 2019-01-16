@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './App';
+import Game from './components/Game';
 
-import './index.css';
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <Game
+        width={1280}
+        height={720}
+        rows={144}
+        cols={256}
+    />,
+    document.getElementById('root')
+);
